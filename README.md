@@ -54,6 +54,8 @@ Parameter | Description
 -from | From Address
 -to | To Address
 -replyto | Reply To Address
+-cc | (Carbon Copy) - Email address(es) here if you are sending a copy for their information (and you want everyone to explicitly see this)
+-bcc | (Blind Carbon Copy) - Email address here if you are sending them a Copy and you do not want the other recipients to see that you sent it to this contact
 -subject |  Subject
 -smtp.host | SMTP Host
 -smtp.port | SMTP Port
