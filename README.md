@@ -36,7 +36,7 @@ mvn clean package
 **Send**
 
 ```
-java -jar target/send-mail-0.0.1-SNAPSHOT.jar \
+java -jar target/sendemail.jar \
 -from from@gmail.com \
 -to mail1@gmail.com,mail2@yahoo.com.br \
 -replyto noreply@gmail.com \
