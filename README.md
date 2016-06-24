@@ -1,4 +1,4 @@
-# Java Send Mailer
+# Java Send Email CID
 
 Java Tool for Sending EMail with CID attachment.
 
