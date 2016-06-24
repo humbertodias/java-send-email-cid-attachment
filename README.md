@@ -41,12 +41,12 @@ java -jar target/sendemail.jar \
 -from from@gmail.com \
 -to mail1@gmail.com,mail2@yahoo.com.br \
 -replyto noreply@gmail.com \
--subject SUBJECT \
+-subject "What would you like to see most in Java?" \
 -smtp.host smtp.gmail.com \
 -smtp.port 587  \
--html "<html><body><img src='cid:java-logo.png'/></body></html>" \
+-html "<html><body>Check out <a href='http://www.java.com'>www.java.com</a><img src='cid:java-logo.png'/></body></html>" \
 -attachs doc/java-logo.png \
--user USERNAME \
+-user $USERNAME \
 -password
 
 ```
@@ -100,9 +100,13 @@ mvn clean package
 
 ```
 
-## Recieved
+## Inbox
 
 ![Preview](doc/inbox.png)
+
+## Raw Message
+
+![Preview](doc/raw-email.png)
 
 
 ## Solutions
@@ -120,7 +124,7 @@ Caused by: javax.mail.AuthenticationFailedException: 534-5.7.14 <https://account
 534 5.7.14  https://support.google.com/mail/answer/78754 111sm1297176uav.0 - gsmtp
 ```
 
-Access your account on [https://www.google.com/settings/security/lesssecureapps](https://www.google.com/settings/security/lesssecureapps)
+Access your account on [https://www.google.com/settings/security/lesssecureapps](https://www.google.com/settings/security/lesssecureapps) and enable **access to lesse secure apps**.
 
 ![Preview](doc/gmail-less-security.png)
 
