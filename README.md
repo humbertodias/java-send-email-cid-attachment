@@ -2,9 +2,10 @@
 
 Java Tool for Sending EMail with CID attachment.
 
-CID : Content-ID 
+CID : Content-ID as embedded image.
 
-[https://en.wikipedia.org/wiki/MIME](https://en.wikipedia.org/wiki/MIME)
+![Embedded-Image](doc/embedded-images.png)
+
 
 ## Prerequires
 
@@ -125,3 +126,9 @@ Access your account on [https://www.google.com/settings/security/lesssecureapps]
 
 1. [GMail Less Security](https://support.google.com/accounts/answer/6010255?hl=en)
 
+
+## References
+
+1. [https://en.wikipedia.org/wiki/MIME](https://en.wikipedia.org/wiki/MIME)
+
+2. [https://www.campaignmonitor.com/blog/how-to/2008/08/embedding-images-in-email/](https://www.campaignmonitor.com/blog/how-to/2008/08/embedding-images-in-email/)
