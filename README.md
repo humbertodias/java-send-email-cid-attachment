@@ -15,13 +15,13 @@ Java Tool for Sending EMail with CID attachment.
 Clone
 
 ```
-git clone https://github.com/humbertodias/java-send-mailer.git
+git clone https://github.com/humbertodias/java-send-email-cid-attachment.git
 ```
 
 Inside the folder
 
 ```
-cd java-send-mailer
+cd java-send-email-cid-attachment
 ```
 
 **Package**
