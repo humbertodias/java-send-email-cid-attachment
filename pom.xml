@@ -2,12 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>java-util</groupId>
-	<artifactId>send-mail</artifactId>
+	<artifactId>sendemail</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>java-send-mail</name>
+	<name>java-send-email</name>
 
 	<properties>
-		<project.build.finalName>send-mail.jar</project.build.finalName>
+		<finalName>sendemail</finalName>
 		<fully.qualified.main.class>util.SendEmail</fully.qualified.main.class>
 	</properties>
 
@@ -66,7 +66,7 @@
 				<artifactId>maven-jar-plugin</artifactId>
 
 				<configuration>
-
+					<finalName>${finalName}</finalName>
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>

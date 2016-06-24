@@ -1,6 +1,7 @@
 package util;
 
 import java.io.File;
+import java.io.Serializable;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -14,13 +15,15 @@ import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
 
-public class SendEmail {
+public class SendEmail implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 
 	@Parameter(names = { "-h", "--help" }, help = true)
-	private boolean help;
+	boolean help;
 
-	@Parameter(names = "-v", description = "Version", required = false)
-	boolean version;
+	@Parameter(names = {"-v", "--version"}, description = "Version", required = false)
+	boolean version = false;
 
 	@Parameter(names = "-user", description = "User", required = true)
 	String authuser;
@@ -74,7 +77,7 @@ public class SendEmail {
 		email.setHostName(smtpHostName);
 
 		email.setFrom(from);
-		
+
 		if (replyTo != null)
 			email.addReplyTo(replyTo);
 
@@ -84,7 +87,7 @@ public class SendEmail {
 			email.addBcc(bcc.split(","));
 
 		email.addTo(to.split(","));
-		
+
 		email.setSubject(subject);
 
 		for (String apath : attachments) {
@@ -114,15 +117,17 @@ public class SendEmail {
 		email.send();
 	}
 
-	public static void main(String... args) throws MalformedURLException, EmailException {
+	public static void main(String ... args) throws MalformedURLException, EmailException {
 		SendEmail sendMail = new SendEmail();
 		try {
 
 			JCommander jCommander = new JCommander(sendMail, args);
 			if (sendMail.help)
 				jCommander.usage();
-
-			sendMail.send();
+			else if (sendMail.version)
+				System.out.format("Version: %d\n", serialVersionUID);
+			else
+				sendMail.send();
 
 		} catch (ParameterException e) {
 			System.err.println(e.getLocalizedMessage());
