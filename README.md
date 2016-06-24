@@ -2,6 +2,9 @@
 
 Java Tool for Sending EMail with CID attachment.
 
+CID : Content-ID 
+
+[https://en.wikipedia.org/wiki/MIME](https://en.wikipedia.org/wiki/MIME)
 
 ## Prerequires
 
