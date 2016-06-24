@@ -34,6 +34,37 @@ cd java-send-email-cid-attachment
 mvn clean package
 ```
 
+```
+mvn clean package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building java-send-mail 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ send-mail ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ send-mail ---
+[INFO] Building jar: /Users/humbertodias/git/java-send-mailer/target/send-mail-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default) @ send-mail ---
+[INFO] Copying commons-logging-1.2.jar to /Users/humbertodias/git/java-send-mailer/target/send-mail-0.0.1-SNAPSHOT.lib/commons-logging-1.2.jar
+[INFO] Copying commons-email-1.4.jar to /Users/humbertodias/git/java-send-mailer/target/send-mail-0.0.1-SNAPSHOT.lib/commons-email-1.4.jar
+[INFO] Copying javax.mail-1.5.2.jar to /Users/humbertodias/git/java-send-mailer/target/send-mail-0.0.1-SNAPSHOT.lib/javax.mail-1.5.2.jar
+[INFO] Copying activation-1.1.1.jar to /Users/humbertodias/git/java-send-mailer/target/send-mail-0.0.1-SNAPSHOT.lib/activation-1.1.1.jar
+[INFO] Copying jcommander-1.48.jar to /Users/humbertodias/git/java-send-mailer/target/send-mail-0.0.1-SNAPSHOT.lib/jcommander-1.48.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.151 s
+[INFO] Finished at: 2016-06-24T02:01:12-03:00
+[INFO] Final Memory: 18M/215M
+[INFO] ------------------------------------------------------------------------
+
+```
+
+
 **Send**
 
 ```
@@ -68,37 +99,6 @@ Parameter | Description
 -user | User
 -password | Password
 
-## Output
-
-```
-mvn clean package
-[INFO] Scanning for projects...
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building java-send-mail 0.0.1-SNAPSHOT
-[INFO] ------------------------------------------------------------------------
-[INFO] Copying 0 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ send-mail ---
-[INFO] 
-[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ send-mail ---
-[INFO] Building jar: /Users/humbertodias/git/java-send-mailer/target/send-mail-0.0.1-SNAPSHOT.jar
-[INFO] 
-[INFO] --- maven-dependency-plugin:2.8:copy-dependencies (default) @ send-mail ---
-[INFO] Copying commons-logging-1.2.jar to /Users/humbertodias/git/java-send-mailer/target/send-mail-0.0.1-SNAPSHOT.lib/commons-logging-1.2.jar
-[INFO] Copying commons-email-1.4.jar to /Users/humbertodias/git/java-send-mailer/target/send-mail-0.0.1-SNAPSHOT.lib/commons-email-1.4.jar
-[INFO] Copying javax.mail-1.5.2.jar to /Users/humbertodias/git/java-send-mailer/target/send-mail-0.0.1-SNAPSHOT.lib/javax.mail-1.5.2.jar
-[INFO] Copying activation-1.1.1.jar to /Users/humbertodias/git/java-send-mailer/target/send-mail-0.0.1-SNAPSHOT.lib/activation-1.1.1.jar
-[INFO] Copying jcommander-1.48.jar to /Users/humbertodias/git/java-send-mailer/target/send-mail-0.0.1-SNAPSHOT.lib/jcommander-1.48.jar
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.151 s
-[INFO] Finished at: 2016-06-24T02:01:12-03:00
-[INFO] Final Memory: 18M/215M
-[INFO] ------------------------------------------------------------------------
-
-```
 
 ## Inbox
 
