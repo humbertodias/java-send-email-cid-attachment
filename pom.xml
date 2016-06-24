@@ -6,6 +6,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>java-send-mail</name>
 
+	<properties>
+		<project.build.finalName>send-mail.jar</project.build.finalName>
+		<fully.qualified.main.class>util.SendEmail</fully.qualified.main.class>
+	</properties>
+
 	<dependencies>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
@@ -33,10 +38,6 @@
 
 	</dependencies>
 
-	<properties>
-		<project.build.finalName>send-mail.jar</project.build.finalName>
-		<fully.qualified.main.class>util.SendEmail</fully.qualified.main.class>
-	</properties>
 
 	<build>
 
@@ -63,7 +64,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>3.0.1</version>
 
 				<configuration>
 
