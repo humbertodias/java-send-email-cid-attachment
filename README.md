@@ -99,7 +99,22 @@ mvn clean package
 ![Preview](doc/inbox.png)
 
 
-## References
+## Solutions
+
+If you recieve the follow exception:
+
+```
+Caused by: javax.mail.AuthenticationFailedException: 534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbs5
+534-5.7.14 3133xNorQuATjuGGVsL8hogCto3wUsOueoL7gBxaoblHfsLiw27IIfGGcGeqvYkhsiIPM7
+534-5.7.14 7UlBiL4WPDaeGO_fJYtgPGSeuA7jKhCi7snTGFUNwWRmStPABxp-3dgguOAjIloa041WPD
+534-5.7.14 wWvfgYPIU7STlxKCY0zeUY1eG-6rnjDBHviTX1GQ_9JomG2-bWadOaEUQmWNG7dIPI9AN6
+534-5.7.14 0athdCkIzGqQwH3Gon5gXYcTV1HB0> Please log in via your web browser and
+534-5.7.14 then try again.
+534-5.7.14  Learn more at
+534 5.7.14  https://support.google.com/mail/answer/78754 111sm1297176uav.0 - gsmtp
+```
+
+Access your account on [https://www.google.com/settings/security/lesssecureapps](https://www.google.com/settings/security/lesssecureapps)
 
 ![Preview](doc/gmail-less-security.png)
 
